@@ -1,0 +1,165 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+/*PATTOR styles*/
+/*
+  sorry for the repeting code, really running out of time
+*/
+
+.front-page-subtitle-product,
+.front-page-title-product{
+  color:#fff;
+}
+
+.img-bg-plastilina{
+  background-color:#424242 !important;
+  
+}
+.img-bg-papiroflexia{
+  background-color:#212121 !important;
+
+}
+.img-bg-adivinanzas{
+  background-color:#212121 !important;
+
+}
+.img-bg-rompecabezas{
+  background-color:#424242 !important;
+
+}
+.img-bg-chistes{
+  background-color:#424242 !important;
+
+}
+.img-bg-trabalenguas{
+  background-color:#212121 !important;
+
+}
+.nav-item{
+  text-transform: uppercase;
+}
+
+
+  /* unvisited link */
+.front-page-link:link {
+    color: #fff;
+    opacity: .8;
+} 
+/* visited link */
+.front-page-link:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+.front-page-link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* selected link */
+.front-page-link:active {
+    color: #fff;
+    opacity: .6;
+  }
+.pattor_card{
+  width: 98%;
+  margin: 1%;
+}
+.pattor_justify-self-end{
+  display: block;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.pattor_title {
+  font-size:48px;
+}
+@media(min-width: 480px){
+  .pattor_card{
+  width: 48%;
+  }
+}
+@media(min-width: 720px){
+  .pattor_card{
+  width: 31%;
+  }
+  .pattor_title {
+  font-size:84px;
+}
+}
